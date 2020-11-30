@@ -8,6 +8,8 @@ planet_name = ""
 ran_var = 0
 ran_const = 0
 ran_vowel = 0
+ran_apost = 0
+apost_count = 0
   
 create = input("Would you like to create a planet?Type 'yes' or 'no': \n")
 
@@ -21,6 +23,10 @@ if create == "yes":
     elif (x + ran_var) % 2 == 1:
       ran_vowel = random.choice(vowel)
       planet_name += ran_vowel
+    #Add apostrophe in name
+    if (x * ran_var + 21) % 2 == 0 and apost_count < 2:
+      planet_name += "'"
+      apost_count += 1
     
 
 else:
