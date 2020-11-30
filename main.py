@@ -18,9 +18,10 @@ if create == "yes":
     if (x + ran_var) % 2 == 0:
       ran_const = random.choice(const)
       planet_name += ran_const
-    if (x + ran_var) % 2 == 1:
+    elif (x + ran_var) % 2 == 1:
       ran_vowel = random.choice(vowel)
       planet_name += ran_vowel
+    
 
 else:
   print("Well, then screw off.")
