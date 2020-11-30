@@ -13,7 +13,7 @@ create = input("Would you like to create a planet?Type 'yes' or 'no': \n")
 
 if create == "yes":
   length = random.randint(2, 11)
-  ran_var = random.randint(1, length)
+  ran_var = random.randint(1, 100)
   for x in range(length):
     if (x + ran_var) % 2 == 0:
       ran_const = random.choice(const)
